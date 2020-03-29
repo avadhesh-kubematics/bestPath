@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e0060a2-34b2-40c8-a92b-9a11d2dc6907" name="Default Changelist" comment="" />
+    <list default="true" id="4e0060a2-34b2-40c8-a92b-9a11d2dc6907" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +12,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1ZniJTZHMBVDEi4t5izv3raKhw0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
@@ -26,5 +41,18 @@
       <updated>1585481186047</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.feature" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="674" y="328" width="571" height="393" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585482448050">
+      <screen x="0" y="0" width="1920" height="1041" />
+    </state>
+    <state x="674" y="328" width="571" height="393" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1041@0.0.1920.1041" timestamp="1585482448050" />
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1585484839509">
+      <screen x="0" y="0" width="1920" height="1041" />
+    </state>
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1041@0.0.1920.1041" timestamp="1585484839509" />
   </component>
 </project>
