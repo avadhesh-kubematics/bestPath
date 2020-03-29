@@ -10,4 +10,3 @@ Feature: Find the best path to your destination
         Given I need instant information about road congestion
         When I look to the Porto map
         Then I regard the principal information to avoid some roads
-        
