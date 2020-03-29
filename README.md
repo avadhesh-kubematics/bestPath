@@ -67,6 +67,13 @@ During all the development, tests will be created on various levels to ensure th
 8. **Running via Maven**: we want to ensure that our Cucumber scenarios can be run as part of a Maven build process. Create a new class inside src/test/java named RunCukesTest (you can see the code on this repository).
 
 
+9. For each feature select the file (*.feature) that you want to run.
+
+## Important notes
+
+1. Each of the files with features should have only one feature.
+
+
 ## Authors
 
 * **Catarina Silva** - [catarinaacsilva](https://github.com/catarinaacsilva)
