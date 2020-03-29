@@ -4,8 +4,8 @@
 
 ## Requirements
 
-- Java
-
+- Java 8
+- SpringBoot 2.2.6
 
 
 ## Authors
