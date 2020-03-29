@@ -51,7 +51,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/ua/deti/es" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: bestpath">
+  <component name="RunManager" selected="Cucumber java.Feature: bestpath_2">
     <configuration name="Feature: bestpath" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/bestpath/bestpath.feature" />
@@ -60,6 +60,24 @@
       <module name="bestpath" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: bestpath" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: bestpath_2" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/bestpath/bestpath_2.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="bestpath" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: bestpath_2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -116,9 +134,11 @@
       <item itemvalue="JUnit.BestpathApplicationTests" />
       <item itemvalue="Cucumber java.Feature: bestpath" />
       <item itemvalue="Cucumber java.Scenario: Find the fastest path to the Ribeira" />
+      <item itemvalue="Cucumber java.Feature: bestpath_2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: bestpath_2" />
         <item itemvalue="Cucumber java.Feature: bestpath" />
         <item itemvalue="Cucumber java.Scenario: Find the fastest path to the Ribeira" />
         <item itemvalue="JUnit.BestpathApplicationTests" />
@@ -162,22 +182,22 @@
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
     <state x="742" y="282" width="434" height="487" key="FileChooserDialogImpl/0.0.1920.1041@0.0.1920.1041" timestamp="1585506627134" />
-    <state width="937" height="259" key="GridCell.Tab.0.bottom" timestamp="1585518807775">
+    <state width="937" height="259" key="GridCell.Tab.0.bottom" timestamp="1585518950099">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
-    <state width="937" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1041@0.0.1920.1041" timestamp="1585518807775" />
-    <state width="937" height="259" key="GridCell.Tab.0.center" timestamp="1585518807773">
+    <state width="937" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1041@0.0.1920.1041" timestamp="1585518950099" />
+    <state width="937" height="259" key="GridCell.Tab.0.center" timestamp="1585518950099">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
-    <state width="937" height="259" key="GridCell.Tab.0.center/0.0.1920.1041@0.0.1920.1041" timestamp="1585518807773" />
-    <state width="937" height="259" key="GridCell.Tab.0.left" timestamp="1585518807772">
+    <state width="937" height="259" key="GridCell.Tab.0.center/0.0.1920.1041@0.0.1920.1041" timestamp="1585518950099" />
+    <state width="937" height="259" key="GridCell.Tab.0.left" timestamp="1585518950099">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
-    <state width="937" height="259" key="GridCell.Tab.0.left/0.0.1920.1041@0.0.1920.1041" timestamp="1585518807772" />
-    <state width="937" height="259" key="GridCell.Tab.0.right" timestamp="1585518807774">
+    <state width="937" height="259" key="GridCell.Tab.0.left/0.0.1920.1041@0.0.1920.1041" timestamp="1585518950099" />
+    <state width="937" height="259" key="GridCell.Tab.0.right" timestamp="1585518950099">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
-    <state width="937" height="259" key="GridCell.Tab.0.right/0.0.1920.1041@0.0.1920.1041" timestamp="1585518807774" />
+    <state width="937" height="259" key="GridCell.Tab.0.right/0.0.1920.1041@0.0.1920.1041" timestamp="1585518950099" />
     <state x="456" y="158" width="1007" height="733" key="SettingsEditor" timestamp="1585498771659">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
