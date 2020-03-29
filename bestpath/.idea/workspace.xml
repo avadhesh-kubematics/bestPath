@@ -52,14 +52,32 @@
     </key>
   </component>
   <component name="RunManager" selected="Cucumber java.Feature: bestpath_2">
-    <configuration name="Feature: bestpath" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: bestpath_0" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/bestpath/bestpath.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/bestpath/bestpath_0.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="bestpath" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: bestpath" />
+      <option name="SUGGESTED_NAME" value="Feature: bestpath_0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: bestpath_1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/bestpath/bestpath_1.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="bestpath" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: bestpath_1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -88,15 +106,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Find the fastest path to the Ribeira" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: bestpath_3" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/bestpath/bestpath.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/bestpath/bestpath_3.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="bestpath" />
-      <option name="NAME_FILTER" value="^Find the fastest path to the Ribeira$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Find the fastest path to the Ribeira$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Find the fastest path to the Ribeira" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: bestpath_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: bestpath_4" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/bestpath/bestpath_4.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="bestpath" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: bestpath_4" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -115,33 +150,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BestpathApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bestpath" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ua.deti.es.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ua.deti.es" />
-      <option name="MAIN_CLASS_NAME" value="ua.deti.es.BestpathApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.BestpathApplicationTests" />
-      <item itemvalue="Cucumber java.Feature: bestpath" />
-      <item itemvalue="Cucumber java.Scenario: Find the fastest path to the Ribeira" />
       <item itemvalue="Cucumber java.Feature: bestpath_2" />
+      <item itemvalue="Cucumber java.Feature: bestpath_1" />
+      <item itemvalue="Cucumber java.Feature: bestpath_3" />
+      <item itemvalue="Cucumber java.Feature: bestpath_4" />
+      <item itemvalue="Cucumber java.Feature: bestpath_0" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber java.Feature: bestpath_2" />
-        <item itemvalue="Cucumber java.Feature: bestpath" />
-        <item itemvalue="Cucumber java.Scenario: Find the fastest path to the Ribeira" />
-        <item itemvalue="JUnit.BestpathApplicationTests" />
+        <item itemvalue="Cucumber java.Feature: bestpath_0" />
+        <item itemvalue="Cucumber java.Feature: bestpath_4" />
+        <item itemvalue="Cucumber java.Feature: bestpath_3" />
+        <item itemvalue="Cucumber java.Feature: bestpath_1" />
       </list>
     </recent_temporary>
   </component>
@@ -182,22 +204,22 @@
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
     <state x="742" y="282" width="434" height="487" key="FileChooserDialogImpl/0.0.1920.1041@0.0.1920.1041" timestamp="1585506627134" />
-    <state width="937" height="259" key="GridCell.Tab.0.bottom" timestamp="1585518950099">
+    <state width="937" height="259" key="GridCell.Tab.0.bottom" timestamp="1585519878272">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
-    <state width="937" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1041@0.0.1920.1041" timestamp="1585518950099" />
-    <state width="937" height="259" key="GridCell.Tab.0.center" timestamp="1585518950099">
+    <state width="937" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1041@0.0.1920.1041" timestamp="1585519878272" />
+    <state width="937" height="259" key="GridCell.Tab.0.center" timestamp="1585519878270">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
-    <state width="937" height="259" key="GridCell.Tab.0.center/0.0.1920.1041@0.0.1920.1041" timestamp="1585518950099" />
-    <state width="937" height="259" key="GridCell.Tab.0.left" timestamp="1585518950099">
+    <state width="937" height="259" key="GridCell.Tab.0.center/0.0.1920.1041@0.0.1920.1041" timestamp="1585519878270" />
+    <state width="937" height="259" key="GridCell.Tab.0.left" timestamp="1585519878268">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
-    <state width="937" height="259" key="GridCell.Tab.0.left/0.0.1920.1041@0.0.1920.1041" timestamp="1585518950099" />
-    <state width="937" height="259" key="GridCell.Tab.0.right" timestamp="1585518950099">
+    <state width="937" height="259" key="GridCell.Tab.0.left/0.0.1920.1041@0.0.1920.1041" timestamp="1585519878268" />
+    <state width="937" height="259" key="GridCell.Tab.0.right" timestamp="1585519878271">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
-    <state width="937" height="259" key="GridCell.Tab.0.right/0.0.1920.1041@0.0.1920.1041" timestamp="1585518950099" />
+    <state width="937" height="259" key="GridCell.Tab.0.right/0.0.1920.1041@0.0.1920.1041" timestamp="1585519878271" />
     <state x="456" y="158" width="1007" height="733" key="SettingsEditor" timestamp="1585498771659">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>

@@ -5,39 +5,39 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class DemoDefinitions {
-    @Given("^I am at Estação de São Bento$")
-    public void i_am_at_Estação_de_São_Bento() throws Exception {
+public class TestsImplementation2 {
+    @Given("^several buses on Porto$")
+    public void several_buses_on_Porto() throws Exception {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
 
-    @When("^I search for the fastest path to Ribeira$")
-    public void i_search_for_the_fastest_path_to_Ribeira() throws Exception {
+    @When("^is necessary the information about traffic to process the data$")
+    public void is_necessary_the_information_about_traffic_to_process_the_data() throws Exception {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
 
-    @Then("^I find the road with less congestion$")
-    public void i_find_the_road_with_less_congestion() throws Exception {
+    @Then("^use the velocity of these buses to know if the traffic is slow, fast or normal\\.$")
+    public void use_the_velocity_of_these_buses_to_know_if_the_traffic_is_slow_fast_or_normal() throws Exception {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
 
-    @Given("^I need instant information about road congestion$")
-    public void i_need_instant_information_about_road_congestion() throws Exception {
+    @Given("^a road$")
+    public void a_road() throws Exception {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
 
-    @When("^I look to the Porto map$")
-    public void i_look_to_the_Porto_map() throws Exception {
+    @When("^we know if that road is congestion or not$")
+    public void we_know_if_that_road_is_congestion_or_not() throws Exception {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
 
-    @Then("^I regard the principal information to avoid some roads$")
-    public void i_regard_the_principal_information_to_avoid_some_roads() throws Exception {
+    @Then("^we compare the values of limits and the median velocity$")
+    public void we_compare_the_values_of_limits_and_the_median_velocity() throws Exception {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
