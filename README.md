@@ -64,7 +64,7 @@ During all the development, tests will be created on various levels to ensure th
 
 7. Notice how the package for our step definitions is the same name as the package we set in the Glue setting for the run configuration. This is so that the run configuration knows where to look for the step definitions when a feature file is run. Inside our package, we create a new class called DemoDefinitions and copy the step definitions from the previous run's output.
 
-8. **Running via Maven**: we want to ensure that our Cucumber scenarios can be run as part of a Maven build process. Create a new class inside src/test/java named RunCukesTest (you can see the code on this repository).
+8. **Running via Maven**: we want to ensure that our Cucumber scenarios can be run as part of a Maven build process. Create a new class inside src/test/java named RunCucumberTest (you can see the code on this repository).
 
 
 9. For each feature select the file (*.feature) that you want to run.
