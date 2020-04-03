@@ -28,10 +28,15 @@ pipeline{
         }
     
         stage('Deploy') {
-           steps {
+            steps {
                 
             } 
         }
     }
+    
+    post{
+        always{
 
+        }
+    }
 }
