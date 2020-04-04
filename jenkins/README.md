@@ -10,7 +10,7 @@ To local tests:
 
 2. Pull (or build) some image: `docker pull nginx`
 
-3. Tag the image so that it points to the registry: `docker image tag nginx localhost:5000/testImage`
+3. Tag the image so that it points to the registry: `docker image tag nginx localhost:5000/testimage`
 
 4. Push it: `docker push localhost:5000/testImage`
 
@@ -20,9 +20,20 @@ Extra:
 
 - To stop the registry and remove all data: `docker container stop registry && docker container rm -v registry`
 
+Local tests with docker-compose:
+
+1. Start the registry: `docker run -d -p 5000:5000 --name registry registry:2`
+
+2. Pull (or build) some image: `docker pull nginx`
+
+3. Tag the image so that it points to the registry: `docker image tag nginx localhost:5000/testimage`
+
+4. `docker-compose push`
+
 ## Run
 
 - Repository: 192.168.160.99
+
 
 ## Authors
 
