@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e0060a2-34b2-40c8-a92b-9a11d2dc6907" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ua/deti/es/BestpathApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/ua/deti/es/p34/BestpathApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/ua/deti/es/p34/BestpathApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/ua/deti/es/p34/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/ua/deti/es/p34/controller/httpController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,23 +23,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1ZniJTZHMBVDEi4t5izv3raKhw0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../transito-es" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.18417946" />
@@ -45,24 +40,28 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/test/java/ua/deti/es" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: bestpath_2">
-    <configuration name="Feature: bestpath_0" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/bestpath/bestpath_0.feature" />
+  <component name="RunManager" selected="Application.BestpathApplication">
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="bestpath" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: bestpath_0" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BestpathApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pt.ua.deti.es.p34.BestpathApplication" />
+      <module name="bestpath" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="PATTERN" value="pt.ua.deti.es.p34.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,28 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="bestpath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Cucumber java.Feature: bestpath_2" />
-      <item itemvalue="Cucumber java.Feature: bestpath_1" />
-      <item itemvalue="Cucumber java.Feature: bestpath_3" />
-      <item itemvalue="Cucumber java.Feature: bestpath_4" />
-      <item itemvalue="Cucumber java.Feature: bestpath_0" />
+      <item itemvalue="Application.BestpathApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Feature: bestpath_2" />
-        <item itemvalue="Cucumber java.Feature: bestpath_0" />
-        <item itemvalue="Cucumber java.Feature: bestpath_4" />
-        <item itemvalue="Cucumber java.Feature: bestpath_3" />
-        <item itemvalue="Cucumber java.Feature: bestpath_1" />
+        <item itemvalue="Application.BestpathApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -200,26 +183,26 @@
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
     <state x="692" y="309" width="535" height="431" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1041@0.0.1920.1041" timestamp="1585498847325" />
-    <state x="742" y="282" width="434" height="487" key="FileChooserDialogImpl" timestamp="1585506627134">
+    <state x="742" y="282" width="434" height="487" key="FileChooserDialogImpl" timestamp="1586802482580">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
-    <state x="742" y="282" width="434" height="487" key="FileChooserDialogImpl/0.0.1920.1041@0.0.1920.1041" timestamp="1585506627134" />
-    <state width="937" height="259" key="GridCell.Tab.0.bottom" timestamp="1585519878272">
+    <state x="742" y="282" width="434" height="487" key="FileChooserDialogImpl/0.0.1920.1041@0.0.1920.1041" timestamp="1586802482580" />
+    <state width="1874" height="338" key="GridCell.Tab.0.bottom" timestamp="1586805936231">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
-    <state width="937" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1041@0.0.1920.1041" timestamp="1585519878272" />
-    <state width="937" height="259" key="GridCell.Tab.0.center" timestamp="1585519878270">
+    <state width="1874" height="338" key="GridCell.Tab.0.bottom/0.0.1920.1041@0.0.1920.1041" timestamp="1586805936231" />
+    <state width="1874" height="338" key="GridCell.Tab.0.center" timestamp="1586805936230">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
-    <state width="937" height="259" key="GridCell.Tab.0.center/0.0.1920.1041@0.0.1920.1041" timestamp="1585519878270" />
-    <state width="937" height="259" key="GridCell.Tab.0.left" timestamp="1585519878268">
+    <state width="1874" height="338" key="GridCell.Tab.0.center/0.0.1920.1041@0.0.1920.1041" timestamp="1586805936230" />
+    <state width="1874" height="338" key="GridCell.Tab.0.left" timestamp="1586805936230">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
-    <state width="937" height="259" key="GridCell.Tab.0.left/0.0.1920.1041@0.0.1920.1041" timestamp="1585519878268" />
-    <state width="937" height="259" key="GridCell.Tab.0.right" timestamp="1585519878271">
+    <state width="1874" height="338" key="GridCell.Tab.0.left/0.0.1920.1041@0.0.1920.1041" timestamp="1586805936230" />
+    <state width="1874" height="338" key="GridCell.Tab.0.right" timestamp="1586805936231">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>
-    <state width="937" height="259" key="GridCell.Tab.0.right/0.0.1920.1041@0.0.1920.1041" timestamp="1585519878271" />
+    <state width="1874" height="338" key="GridCell.Tab.0.right/0.0.1920.1041@0.0.1920.1041" timestamp="1586805936231" />
     <state x="456" y="158" width="1007" height="733" key="SettingsEditor" timestamp="1585498771659">
       <screen x="0" y="0" width="1920" height="1041" />
     </state>

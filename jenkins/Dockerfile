@@ -1,21 +1,18 @@
-FROM ubuntu:20.04
-WORKDIR /usr/src/app
+FROM maven:3.6.3-jdk-14
 
-RUN  apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/*
+#Install git
+RUN apt update \        
+     apt install -y git
+     
+# Clone from code repository
+RUN mkdir /home/bestpath \      
+           cd /home/bestpath \        
+           git clone https://github.com/es2020p34/best-path.git
+#Set working directory
+WORKDIR /home/bestpath/best-path
 
+# Install requirements and compile code
+RUN mvn clean package spring-boot:repackage
 
-RUN apt-get update && apt-get install -y maven
-
-RUN apt-get update && apt-get install -y default-jdk
-
-RUN wget http://www-us.apache.org/dist/kafka/2.4.0/kafka_2.13-2.4.0.tgz
-RUN tar xzf kafka_2.13-2.4.0.tgz
-RUN mv kafka_2.13-2.4.0 /usr/local/kafka
-COPY ./kafka/zookeeper.service /etc/systemd/system/
-COPY ./kafka/kafka.service /etc/systemd/system/
-CMD ["systemctl", "daemon-reload"]
-CMD ["systemctl", "start", "zookeeper"]
-CMD ["systemctl", "start", "kafka"]
-
-RUN apt update && apt install -y nginx
-CMD ["systemctl", "enable", "nginx"]
+#Run code
+RUN java -jar target/bestpath-0.0.1.jar

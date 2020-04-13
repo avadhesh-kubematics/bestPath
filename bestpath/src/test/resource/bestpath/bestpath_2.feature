@@ -1,4 +1,4 @@
-Feature: All of the systems need a data source
+Feature: All of the system need a data source
   To provide the information is necessary a data source
 
   Scenario: Consuming data from buses velocities information
