@@ -1,15 +1,5 @@
 # BestPath
 
-Difficulties related to traffic congestion are very common in large cities such as Porto and Lisbon. A useful approach to solve these issues is to offer all drivers in this city an application that provides information related to the roads congestion. Thus, the drivers can choose other paths and calculate more efficiently the time of arrival at a destination.
-
-The concept behind our project is simple, we intend to develop a prototype capable of giving the customer the best route to a given destination. To do this, we aim to provide a framework with a map, dashboard and some statistics graphics. On the map, the user can see with different colours the intensity of traffic for a specific road segment.
-
-At this moment, the big question is: How can we obtain this information to provide it to the users? To obtain the information that will be given to the users it is necessary to process the existing information. Through GPS coordinates from buses that move in Porto, it is possible to calculate de average velocity and to know the road segment where this information came from. Then with information about velocity on a specific road segment, we can infer whether or not there is traffic.
-
-Regarding the technical accomplishment of such vision, our plan is to develop a solution based on SpringBoot providing a web interface for users, persisting data in a H2 database and interacting with the client-side through a REST API. We will have two sources for stream data, and all the information that arrives at the system will be dealt with Kafka. All the components will be developed in a container environment using docker (docker-compose and Dockerfile).
-
-During all the development, tests will be created on various levels to ensure the correct functioning of the system. The connection of all components of the entire system must be guaranteed and all the components must communicate. It is necessary to ensure that the clock of all components is synchronized and the events are passed for the entire system.
-
 
 ## Requirements
 
@@ -69,15 +59,13 @@ During all the development, tests will be created on various levels to ensure th
 
 9. For each feature select the file (*.feature) that you want to run.
 
+## Vm and dashboard
+
+- **VM**: 192.168.160.103   (Password: FYddio2g)
+- **Dashboard** 192.168.160.87:9090
+
+Note: UA VPN
+
 ## Important notes
 
 1. Each of the files with features should have only one feature.
-
-
-## Authors
-
-* **Catarina Silva** - [catarinaacsilva](https://github.com/catarinaacsilva)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

@@ -1,22 +1,16 @@
 pipeline{
-    agent {
-        docker {
-            image 'maven:3-alpine'
-            label 'my-defined-label'
-            args  '-v /tmp:/tmp'
-        }
-    }
+    agent any
 
     environment {
         CI = 'true'
     }
 
     stages {
-        stage('Tests') {
+        stage('bestpath') {
             when {
-                branch 'Cucumber'
+                branch 'Deploy'
             }
-            steps {
+            steps{
                 
             }
             when {
@@ -25,13 +19,14 @@ pipeline{
             steps {
                 
             }
-        }
-    
-        stage('Deploy') {
+            when {
+                branch 'Cucumber'
+            }
             steps {
                 
-            } 
+            }
         }
+
     }
     
     post{
