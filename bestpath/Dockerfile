@@ -17,4 +17,4 @@ WORKDIR /bestpath/best-path
 RUN mvn clean package spring-boot:repackage
 
 #Run code
-RUN java -jar target/bestpath-0.0.1.jar
+#RUN java -jar target/bestpath-0.0.1.jar
