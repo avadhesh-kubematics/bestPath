@@ -2,7 +2,7 @@ package pt.ua.deti.es.p34.http;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import ua.es.transit.utils.Utils;
+import pt.ua.deti.es.p34.utils.Utils;
 
 import java.io.IOException;
 import java.io.InputStream;
