@@ -10,4 +10,19 @@ public class mainController {
     public String getIndex() {
         return "index.html";
     }
+
+    @RequestMapping(value={"/statistics"})
+    public String getStatistics() {
+        return "statistics.html";
+    }
+    /** 
+    @RequestMapping(value={"/getStatisticsData"})
+    public String getStatistics1() {
+        
+        //fazer query e envar dados..
+        //JSON....
+        return "statistics.html";
+    }
+    */
 }
+
