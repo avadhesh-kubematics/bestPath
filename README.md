@@ -98,3 +98,11 @@ Note: UA VPN
 ## Important notes
 
 1. Each of the files with features should have only one feature.
+
+## Authors
+
+* **Catarina Silva** - [catarinaacsilva](https://github.com/catarinaacsilva)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
