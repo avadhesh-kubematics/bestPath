@@ -75,6 +75,19 @@ mvn clean compile spring-boot:run
 
 9. For each feature select the file (*.feature) that you want to run.
 
+# BestPath API - Test Links
+
+Some example to test the BestPath API:
+
+| Method     | Description                  | URL         |
+|------------|------------------------------|-------------|
+| directions | Gives directions from 0 to 1           | http://localhost:8080/api/directions?lat0=8.681495&lon0=49.41461&lat1=8.687872&lon1=49.420318 |
+| geocode    | Converts address to lat/lon            | http://localhost:8080/api/geocode?text=Aveiro |
+| reverse    | Convert lat/lon to address             | http://localhost:8080/api/reverse?lat=40.635013&lon=-8.651136 |
+| speedlimit | Returns the speed limit in a location  | http://localhost:8080/api/speedlimit?lat=40.635013&lon=-8.651136 |
+| avgspeed   | Return the average speed in a location | http://localhost:8080/api/avgspeed?lat=40.635013&lon=-8.651136 |
+
+
 ## Vm and dashboard
 
 - **VM**: 192.168.160.103   (Password: FYddio2g)
