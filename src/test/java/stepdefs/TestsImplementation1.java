@@ -26,9 +26,9 @@ public class TestsImplementation1 {
     @Then("^I obtain detailed information about general road congestion$")
     public void i_obtain_detailed_information_about_general_road_congestion() {
         if(driver.findElement(By.id("container")).isEnabled()) {
-            System.out.println("Test 1_1 Pass");
+            System.out.println("Test 1 Pass");
         } else {
-            System.out.println("Test 1_1 Fail");
+            System.out.println("Test 1 Fail");
         }
         driver.close();
     }

@@ -1,6 +1,8 @@
-stepdefs/TestsImplementation2.class
 stepdefs/TestsImplementation3.class
 stepdefs/TestsImplementation4.class
 RunCucumberTest.class
-stepdefs/TestsImplementation1.class
 stepdefs/TestsImplementation0.class
+stepdefs/TestsImplementation2.class
+pt/ua/deti/es/p34/utils/HttpTest.class
+pt/ua/deti/es/p34/AppTest.class
+stepdefs/TestsImplementation1.class

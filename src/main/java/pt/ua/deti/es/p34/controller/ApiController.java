@@ -21,6 +21,13 @@ public class ApiController {
     @Autowired
     private final Backend backend = new Backend();
 
+    @GetMapping("/pathdesign")
+    public Map<String, Object> pathdesign(@RequestParam(name = "coords") String coords,
+                                          @RequestParam(name = "radius") String radius) {
+        return backend.pathdesign(coords, radius);
+    }
+
+
     @Cacheable("directions")
     @GetMapping("/directions")
     public Map<String, Object> directions(@RequestParam(name = "lat0") double lat0,

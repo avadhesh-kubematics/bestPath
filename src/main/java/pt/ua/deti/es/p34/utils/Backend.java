@@ -16,12 +16,34 @@ public class Backend {
     static final String reverseUrl = "https://api.openrouteservice.org/geocode/reverse";
     static final String speedLimitUrl = "http://overpass-api.de/api/interpreter";
 
+    static final String mapbox_api_key = "pk.eyJ1IjoiZGlhc2R1YXJ0ZSIsImEiOiJjazZ2YjZmaTYwMDJjM3JzNHZvajJhdTlyIn0.CQS2LCyFIVKZqDuzW_qQmA";
+    static final String pathDesignUrl = "https://api.mapbox.com/matching/v5/mapbox/driving/";
+
+    @Cacheable("pathdesign")
+    public Map<String, Object> pathdesign(String coords, String radius) {
+        Map<String, String> params = new HashMap<>();
+        params.put("access_token", mapbox_api_key);
+        params.put("radiuses", radius);
+        params.put("geometries", "geojson");
+        params.put("steps", "true");
+
+        Map<String, Object> reply = null;
+
+        try {
+            reply = Http.getJson(pathDesignUrl + coords, null, params);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        return reply;
+    }
+
     @Cacheable("directions")
     public Map<String, Object> directions(double lat0, double lon0, double lat1, double lon1) {
         Map<String, String> params = new HashMap<>();
         params.put("api_key", api_key);
-        params.put("start", lat0 + "," + lon0);
-        params.put("end", lat1 + "," + lon1);
+        params.put("start", lon0 + "," + lat0);
+        params.put("end", lon1 + "," + lat1);
 
         Map<String, Object> reply = null;
 
