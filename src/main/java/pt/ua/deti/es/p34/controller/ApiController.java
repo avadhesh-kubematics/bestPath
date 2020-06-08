@@ -3,13 +3,15 @@ package pt.ua.deti.es.p34.controller;
 import pt.ua.deti.es.p34.utils.Backend;
 import pt.ua.deti.es.p34.utils.GeoDB;
 import pt.ua.deti.es.p34.utils.Utils;
+import pt.ua.deti.es.p34.utils.GeoDB.Event;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,17 +20,15 @@ import java.util.Map;
 @RequestMapping("/api")
 public class ApiController {
 
-    @Autowired
-    private final Backend backend = new Backend();
+    private final Backend backend;
+    private final GeoDB geoDB;
 
-    @GetMapping("/pathdesign")
-    public Map<String, Object> pathdesign(@RequestParam(name = "coords") String coords,
-                                          @RequestParam(name = "radius") String radius) {
-        return backend.pathdesign(coords, radius);
+    @Autowired
+    public ApiController(final Backend backend, final GeoDB geoDB) {
+        this.backend = backend;
+        this.geoDB = geoDB;
     }
 
-
-    @Cacheable("directions")
     @GetMapping("/directions")
     public Map<String, Object> directions(@RequestParam(name = "lat0") double lat0,
             @RequestParam(name = "lon0") double lon0, @RequestParam(name = "lat1") double lat1,
@@ -47,7 +47,6 @@ public class ApiController {
     }
 
     @GetMapping("/speedlimit")
-    @Cacheable(value = "speedlimit", key = "new org.springframework.cache.interceptor.SimpleKey(#lat, #lon)")
     public Map<String, Object> speedlimit(@RequestParam(name = "lat") double lat,
             @RequestParam(name = "lon") double lon) {
         return backend.speedlimit(lat, lon);
@@ -56,9 +55,7 @@ public class ApiController {
     @GetMapping("/avgspeed")
     public Map<String, Object> avgspeed(@RequestParam(name = "lat") double lat,
             @RequestParam(name = "lon") double lon) {
-        GeoDB db = new GeoDB();
-
-        double avg_speed = db.getAvgSpeed(lat, lon);
+        double avg_speed = geoDB.getAvgSpeed(lat, lon);
 
         if (avg_speed < 0) {
             Map<String, Object> reply = backend.speedlimit(lat, lon);
@@ -69,5 +66,17 @@ public class ApiController {
         reply.put("avg_speed", avg_speed);
 
         return reply;
+    }
+
+    @GetMapping("/last")
+    public Event lastEvent() {
+        Event e = geoDB.getLastEvent();
+        return e;
+    }
+
+    @PostMapping("/event")
+    public Event newEmployee(@RequestBody Event event) {
+        geoDB.insert_event(event);
+        return event;
     }
 }

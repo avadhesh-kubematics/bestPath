@@ -1,8 +1,8 @@
-package stepdefs;
+package pt.ua.deti.es.p34.stepdefs;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
@@ -15,12 +15,12 @@ public class TestsImplementation1 {
 
     @Given("^I want to know more information about road congestion$")
     public void i_want_to_know_more_information_about_road_congestion() {
-        driver = new FirefoxDriver();
+        driver = new HtmlUnitDriver();
     }
 
     @When("^I see the statistics page on BestPath system$")
     public void i_see_the_statistics_page_on_BestPath_system() {
-        driver.navigate().to("http://localhost:8080/statistics");
+        driver.get("http://localhost:8080/statistics");
     }
 
     @Then("^I obtain detailed information about general road congestion$")

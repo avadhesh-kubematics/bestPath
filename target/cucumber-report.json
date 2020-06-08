@@ -1,0 +1,576 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5098616,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberSpringContextConfiguration.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Find the fastest path to Mercado do Bolhão",
+        "description": "",
+        "id": "find-the-best-path-to-your-destination;find-the-fastest-path-to-mercado-do-bolhão",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2228930852,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am at Mercado do Bolhão",
+            "match": {
+              "location": "TestsImplementation0.i_am_at_Mercado_do_bolhão()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 99828357,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I search for the fastest path to Foz do Douro",
+            "match": {
+              "location": "TestsImplementation0.i_search_for_the_fastest_path_to_Foz_do_Douro()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 113346991,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I find the road with less congestion",
+            "match": {
+              "location": "TestsImplementation0.i_find_the_road_with_less_congestion()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 476796,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberSpringContextConfiguration.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Simple and intuitive Visualization",
+        "description": "",
+        "id": "find-the-best-path-to-your-destination;simple-and-intuitive-visualization",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat pt.ua.deti.es.p34.stepdefs.TestsImplementation0.i_need_instant_information_about_road_congestion(TestsImplementation0.java:56)\n\tat ✽.I need instant information about road congestion(src/test/resource/features/bestpath_0.feature:10)\n",
+              "duration": 2182256,
+              "status": "pending"
+            },
+            "line": 10,
+            "name": "I need instant information about road congestion",
+            "match": {
+              "location": "TestsImplementation0.i_need_instant_information_about_road_congestion()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13107,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I look to the Porto map",
+            "match": {
+              "location": "TestsImplementation0.i_look_to_the_Porto_map()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8157,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I regard the principal information to avoid some roads",
+            "match": {
+              "location": "TestsImplementation0.i_regard_the_principal_information_to_avoid_some_roads()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Find the best path to your destination",
+    "description": "    Everybody wants to reach to the destination quickly",
+    "id": "find-the-best-path-to-your-destination",
+    "keyword": "Feature",
+    "uri": "src/test/resource/features/bestpath_0.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 436656,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberSpringContextConfiguration.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Regard more information about general road congestion",
+        "description": "",
+        "id": "statistics-page;regard-more-information-about-general-road-congestion",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 862292522,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I want to know more information about road congestion",
+            "match": {
+              "location": "TestsImplementation1.i_want_to_know_more_information_about_road_congestion()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1966647409,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I see the statistics page on BestPath system",
+            "match": {
+              "location": "TestsImplementation1.i_see_the_statistics_page_on_BestPath_system()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9379715,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I obtain detailed information about general road congestion",
+            "match": {
+              "location": "TestsImplementation1.i_obtain_detailed_information_about_general_road_congestion()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 486401,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberSpringContextConfiguration.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Make studies about road traffic at Porto",
+        "description": "",
+        "id": "statistics-page;make-studies-about-road-traffic-at-porto",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat pt.ua.deti.es.p34.stepdefs.TestsImplementation1.a_person_with_interesting_to_study_the_road_congestion(TestsImplementation1.java:39)\n\tat ✽.a person with interesting to study the road congestion(src/test/resource/features/bestpath_1.feature:10)\n",
+              "duration": 390247,
+              "status": "pending"
+            },
+            "line": 10,
+            "name": "a person with interesting to study the road congestion",
+            "match": {
+              "location": "TestsImplementation1.a_person_with_interesting_to_study_the_road_congestion()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6976,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "using the information available on the system",
+            "match": {
+              "location": "TestsImplementation1.using_the_information_available_on_the_system()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6531,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "the person can to make a dataset.",
+            "match": {
+              "location": "TestsImplementation1.the_person_can_to_make_a_dataset()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 406068,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberSpringContextConfiguration.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "city official people make management based on existing data",
+        "description": "",
+        "id": "statistics-page;city-official-people-make-management-based-on-existing-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat pt.ua.deti.es.p34.stepdefs.TestsImplementation1.data_information_about_all_the_roads_congestion(TestsImplementation1.java:57)\n\tat ✽.data information about all the roads congestion(src/test/resource/features/bestpath_1.feature:15)\n",
+              "duration": 352945,
+              "status": "pending"
+            },
+            "line": 15,
+            "name": "data information about all the roads congestion",
+            "match": {
+              "location": "TestsImplementation1.data_information_about_all_the_roads_congestion()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7210,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "official people want to improve the quality of traffic",
+            "match": {
+              "location": "TestsImplementation1.official_people_want_to_improve_the_quality_of_traffic()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6572,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "they use the system to visualize the behaviour on last times.",
+            "match": {
+              "location": "TestsImplementation1.they_use_the_system_to_visualize_the_behaviour_on_last_times()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Statistics page",
+    "description": "  A statistics page is available for everyone",
+    "id": "statistics-page",
+    "keyword": "Feature",
+    "uri": "src/test/resource/features/bestpath_1.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 477500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberSpringContextConfiguration.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Consuming data from buses velocities information",
+        "description": "",
+        "id": "all-of-the-system-need-a-data-source;consuming-data-from-buses-velocities-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat pt.ua.deti.es.p34.stepdefs.TestsImplementation2.several_buses_on_Porto(TestsImplementation2.java:16)\n\tat ✽.several buses on Porto(src/test/resource/features/bestpath_2.feature:5)\n",
+              "duration": 4258277,
+              "status": "pending"
+            },
+            "line": 5,
+            "name": "several buses on Porto",
+            "match": {
+              "location": "TestsImplementation2.several_buses_on_Porto()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57908,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "is necessary the information about traffic to process the data",
+            "match": {
+              "location": "TestsImplementation2.is_necessary_the_information_about_traffic_to_process_the_data()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13080,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "use the velocity of these buses to know if the traffic is slow, fast or normal.",
+            "match": {
+              "location": "TestsImplementation2.use_the_velocity_of_these_buses_to_know_if_the_traffic_is_slow_fast_or_normal()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 419710,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberSpringContextConfiguration.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Consuming data about maximum velocity to a given road",
+        "description": "",
+        "id": "all-of-the-system-need-a-data-source;consuming-data-about-maximum-velocity-to-a-given-road",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat pt.ua.deti.es.p34.stepdefs.TestsImplementation2.Mousinho_da_Silveira_street(TestsImplementation2.java:34)\n\tat ✽.Mousinha da Silveira street(src/test/resource/features/bestpath_2.feature:10)\n",
+              "duration": 409506,
+              "status": "pending"
+            },
+            "line": 10,
+            "name": "Mousinha da Silveira street",
+            "match": {
+              "location": "TestsImplementation2.Mousinho_da_Silveira_street()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9077,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "we know if that street is congestion or not",
+            "match": {
+              "location": "TestsImplementation2.we_know_if_that_street_is_congestion_or_not()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6190,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "we compare the values of limits and the median velocity",
+            "match": {
+              "location": "TestsImplementation2.we_compare_the_values_of_limits_and_the_median_velocity()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "All of the system need a data source",
+    "description": "  To provide the information is necessary a data source",
+    "id": "all-of-the-system-need-a-data-source",
+    "keyword": "Feature",
+    "uri": "src/test/resource/features/bestpath_2.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1559278,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberSpringContextConfiguration.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "I want to access the system to find the best path",
+        "description": "",
+        "id": "a-web-application-is-available-to-provide-the-system;i-want-to-access-the-system-to-find-the-best-path",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 27186490,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the necessity to find the best path to the destination",
+            "match": {
+              "location": "TestsImplementation3.the_necessity_to_find_the_best_path_to_the_destination()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2385691960,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I access the web application",
+            "match": {
+              "location": "TestsImplementation3.i_access_the_web_application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2080851,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I can visualize the information",
+            "match": {
+              "location": "TestsImplementation3.i_can_visualize_the_information()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "A web application is available to provide the system",
+    "description": "  The system can be accessed by the web application",
+    "id": "a-web-application-is-available-to-provide-the-system",
+    "keyword": "Feature",
+    "uri": "src/test/resource/features/bestpath_3.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 434347,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberSpringContextConfiguration.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "I report the fails on road congestion predicts",
+        "description": "",
+        "id": "feedback;i-report-the-fails-on-road-congestion-predicts",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat pt.ua.deti.es.p34.stepdefs.TestsImplementation4.i_detect_a_fail_on_system_or_wrong_road_congestion_predict(TestsImplementation4.java:12)\n\tat ✽.I detect a fail on system or wrong road congestion predict(src/test/resource/features/bestpath_4.feature:5)\n",
+              "duration": 5077301,
+              "status": "pending"
+            },
+            "line": 5,
+            "name": "I detect a fail on system or wrong road congestion predict",
+            "match": {
+              "location": "TestsImplementation4.i_detect_a_fail_on_system_or_wrong_road_congestion_predict()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8534,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I reach the destination",
+            "match": {
+              "location": "TestsImplementation4.i_reach_the_destination()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6479,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I report that on feedback that is required",
+            "match": {
+              "location": "TestsImplementation4.i_report_that_on_feedback_that_is_required()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Feedback",
+    "description": "  Is required feedback at the end of use.",
+    "id": "feedback",
+    "keyword": "Feature",
+    "uri": "src/test/resource/features/bestpath_4.feature",
+    "tags": []
+  }
+]

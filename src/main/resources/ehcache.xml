@@ -4,8 +4,6 @@
 
 
     <cache-template name="bestPath">
-        <value-type>java.util.Map</value-type>
-        
         <expiry>
             <ttl unit="seconds">120</ttl>
         </expiry>
@@ -26,9 +24,8 @@
         </resources>
     </cache-template>
 
-    <cache alias="pathdesign" uses-template="bestPath" />
-    <cache alias="directions" uses-template="bestPath" />
-    <cache alias="geocode" uses-template="bestPath" />
-    <cache alias="reverse" uses-template="bestPath" />
-    <cache alias="speedlimit" uses-template="bestPath" />
+    <cache alias="directions" uses-template="bestPath"/>
+    <cache alias="geocode" uses-template="bestPath"/>
+    <cache alias="reverse" uses-template="bestPath"/>
+    <cache alias="speedlimit" uses-template="bestPath"/>
 </config>

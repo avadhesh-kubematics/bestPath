@@ -26,8 +26,8 @@ public class Http {
 
   private static final Logger LOG = LoggerFactory.getLogger(Http.class);
 
-  private static final int DEFAULT_CONNECT_TIMEOUT_MS = 60000, 
-  DEFAULT_READ_TIMEOUT_MS = 60000, DEFAULT_MAX_RETRIES = 3, DEFAULT_RETRY_DELAY_MS = 1000;
+  private static final int DEFAULT_CONNECT_TIMEOUT_MS = 10000, DEFAULT_READ_TIMEOUT_MS = 10000, DEFAULT_MAX_RETRIES = 3,
+      DEFAULT_RETRY_DELAY_MS = 1000;
 
   /**
    * Utility class, lets make the constructor private.
@@ -77,6 +77,14 @@ public class Http {
   /**
    * 
    */
+  public static Map<String, Object> getJson(final String baseUrl, final Map<String, String> params)
+      throws UnsupportedEncodingException {
+    return getJson(baseUrl, null, params);
+  }
+
+  /**
+   * 
+   */
   public static Map<String, Object> getJson(final String baseUrl, final Map<String, String> props,
       final Map<String, String> params) throws UnsupportedEncodingException {
     return getJson(baseUrl, props, params, DEFAULT_CONNECT_TIMEOUT_MS, DEFAULT_READ_TIMEOUT_MS, DEFAULT_MAX_RETRIES);
@@ -99,7 +107,7 @@ public class Http {
       url = baseUrl;
     }
 
-    LOG.info(url);
+    LOG.info("url {}", url);
 
     for (int i = 0; i < retries && !done; i++) {
       try {
@@ -122,7 +130,7 @@ public class Http {
 
         conn.connect();
 
-        //System.err.println(conn.getResponseCode());
+        LOG.info("getResponseCode {}", conn.getResponseCode());
 
         switch (conn.getResponseCode()) {
           case HttpURLConnection.HTTP_OK:
@@ -130,8 +138,6 @@ public class Http {
             InputStream is = inputStream(conn.getInputStream(), conn.getContentEncoding());
             rv = Utils.cast(objectMapper.readValue(is, Map.class));
             done = true;
-            //System.err.println("200 OK");
-            //System.err.println(Utils.stream2string(is));
             break;
           case HttpURLConnection.HTTP_GATEWAY_TIMEOUT:
             break;
@@ -149,7 +155,7 @@ public class Http {
           Thread.sleep(DEFAULT_RETRY_DELAY_MS);
         }
       } catch (IOException | InterruptedException e) {
-        //e.printStackTrace();
+        LOG.error("getJson", e);
         rv = null;
       } finally {
         if (conn != null) {
