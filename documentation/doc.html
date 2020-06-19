@@ -73,10 +73,10 @@
                 <ul>
                   <li><a href="https://docs.google.com/document/d/13L9XrrC5gQnzEP9gXsXqNgqZqT_f7Rlz2aJ_TdC_V7A/edit?usp=sharing">M0</a></li>
                   <li><a href="https://docs.google.com/document/d/1xthDuX46EICflpessaA7YnxTASQEix9WTmfqW-MxNjc/edit?usp=sharing">M1</a></li>
+                  <li><a href="https://docs.google.com/document/d/1x5faKXXnuavwtMzXxP_7pKtR2R9KVnsac_v_zpDUZUs/edit?usp=sharing">M5</a></li>
                 </ul>
               </li>
               <li><a href="https://docs.google.com/spreadsheets/d/1_b69Npt0LRZnv0r5pMCbYyelZP4NoX8lY-o6Ff_MTV8/edit?usp=sharing" style="color:darkgreen;">Timesheet</a></li>
-              <li><a href="#" style="color:darkblue;">JavaDoc</a></li>
               <li><a href="http://code.ua.pt/projects/es-2019-2020-p34/repository" style="color:black;">CodeUA</a></li>
             </ul>
           </li>
@@ -233,12 +233,12 @@
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item" data-aos="fade-up">
                 <a class="nav-link active show" data-toggle="tab">
-                  <h4>User wants to check traffic in a street</h4>
+                  <h4>User wants to know the best path to the destination</h4>
                 </a>
               </li>
               <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="100">
                 <a class="nav-link" data-toggle="tab" href="#tab-2">
-                  <h4>User wants to choose, between two paths, the one with less traffic</h4>
+                  <h4>User wants to know how many buses have passed on a given street</h4>
                 </a>
               </li>
               <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="100">
@@ -248,17 +248,12 @@
               </li>
               <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="100">
                 <a class="nav-link" data-toggle="tab" href="#tab-2">
-                  <h4>User wants to see the streets with more traffic so he can avoid it</h4>
+                  <h4>User wants to know the speed for a given street</h4>
                 </a>
               </li>
               <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="100">
                 <a class="nav-link" data-toggle="tab" href="#tab-2">
-                  <h4>User wants to know speed limits for a given street</h4>
-                </a>
-              </li>
-              <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="100">
-                <a class="nav-link" data-toggle="tab" href="#tab-2">
-                  <h4>User wants to know how fast bus travel through the city</h4>
+                  <h4>User wants to see the traffic for a given street</h4>
                 </a>
               </li>
             </ul>
@@ -299,10 +294,8 @@
                 <p>Find the best path to your destination</p>
               </div>
               <div class="col-md-6 col-lg-6">
-                <p>1. Find the fastest path to the Ribeira</p>
-                <p><b>Given</b> I am at Estação de São Bento<br><b>When</b> I search for the fastest path to Ribeira<br><b>Then</b> I find the road with less congestion</p>
-                <p>2. Simple and intuitive Visualization</p>
-                <p><b>Given</b> I need instant information about road congestion<br><b>When</b> I look to the Porto map<br><b>Then</b> I regard the principal information to avoid some roads</p>
+                <p>1. Find the fastest path to Foz do Douro</p>
+                <p><b>Given</b> I am at Mercado do Bolhão<br><b>When</b> I search for the fastest path to Foz do Douro<br><b>Then</b> I find the road with less congestion</p>
               </div>
               <div class="col-md-6 col-lg-3 my-auto">
                 <p>Everybody wants to reach to the destination quickly</p>
@@ -342,7 +335,7 @@
                 <p>1. Consuming data from buses velocities information</p>
                 <p><b>Given</b> several buses on Porto<br><b>When</b> is necessary the information about traffic to process the data<br><b>Then</b> use the velocity of these buses to know if the traffic is slow, fast or normal</p>
                 <p>2. Consuming data about maximum velocity to a given road</p>
-                <p><b>Given</b> a road<br><b>When</b> we know if that road is congestion or not<br><b>Then</b> we compare the values of limits and the median velocity</p>
+                <p><b>Given</b> Mousinha da Silveira street<br><b>When</b> we know if that road is congestion or not<br><b>Then</b> we compare the values of limits and the median velocity</p>
               </div>
               <div class="col-md-6 col-lg-3 my-auto">
                 <p>To provide the information is necessary a data source</p>
@@ -367,23 +360,6 @@
             </div>
           </div>
         </div>
-        <br>
-        <div class="col-md-6 col-lg-12" data-aos="zoom-in">
-          <div class="box">
-            <div class="row">
-              <div class="col-md-6 col-lg-3 my-auto">
-                <p>Feedback</p>
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <p>1. I report the fails on road congestion predicts</p>
-                <p><b>Given</b> I detect a fail on system or wrong road congestion predict<br><b>When</b> I reach the destination<br><b>Then</b> I report that on feedback that is required</p>
-              </div>
-              <div class="col-md-6 col-lg-3 my-auto">
-                <p>Is required feedback at the end of use</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section><!-- End Tests Section -->
 
@@ -397,16 +373,19 @@
 
         <ul class="faq-list">
           <li data-aos="fade-up">
-            <p style="font-size: large;">1. Access the web page</p>
+            <p style="font-size: large;">1. Access the <a style="display:inline" href="http://192.168.160.103:3480">web page</a></p>
           </li>
           <li data-aos="fade-up">
-            <p style="font-size: large;">2. Consult the map of the home page directly and intuitively with information about traffic on the streets of Porto</p>
+            <p style="font-size: large;">2. Enter your destination in the search bar in the upper right corner</p>
           </li>
           <li data-aos="fade-up">
-            <p style="font-size: large;">3. Open a new tab to see the statistics page</p>
+            <p style="font-size: large;">3. View both the route, traffic and duration to your destination. You can also see the traffic speed on the streets of the route</p>
           </li>
           <li data-aos="fade-up">
-            <p style="font-size: large;">4. Open another tab to make a research on the best way forward to Ribeira</p>
+            <p style="font-size: large;">4. Open a new tab to see the statistics page</p>
+          </li>
+          <li data-aos="fade-up">
+            <p style="font-size: large;">5. On this page you can see the number of buses that pass on a given street (pre-defined)</p>
           </li>
         </ul>
 
