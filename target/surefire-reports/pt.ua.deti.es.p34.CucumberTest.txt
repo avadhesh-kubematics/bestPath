@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: pt.ua.deti.es.p34.CucumberTest
--------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 16.082 s - in pt.ua.deti.es.p34.CucumberTest
