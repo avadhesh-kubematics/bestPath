@@ -90,7 +90,7 @@ Some example to test the BestPath API:
 
 ## Vm and dashboard
 
-- **VM**: 192.168.160.103   (Password: FYddio2g)
+- **VM**: 192.168.160.103
 - **Dashboard** 192.168.160.87:9090
 
 Note: UA VPN
